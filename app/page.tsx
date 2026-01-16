@@ -9,21 +9,21 @@ const products = [
     name: "VEXOR CORE 01",
     price: 279,
     description: "Raquette padel premium – équilibre puissance & contrôle",
-    image: "/images/vexor/racket.webp",
+    image: "/images/vexor/racket.png",
   },
   {
     id: "pro-ball",
     name: "VEXOR PRO BALL",
     price: 7,
     description: "Balles de padel haute performance",
-    image: "/images/vexor/balls.webp",
+    image: "/images/vexor/balls.png",
   },
   {
     id: "core-tee",
     name: "VEXOR CORE TEE",
     price: 49,
     description: "T-shirt technique premium",
-    image: "/images/vexor/textile.webp",
+    image: "/images/vexor/textile.png",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function Home() {
       {/* HERO */}
       <section className="relative h-[80vh] flex items-center justify-center text-center">
         <Image
-          src="/images/vexor/hero.webp"
+          src="/images/vexor/hero.png"
           alt="VEXOR padel"
           fill
           className="object-cover opacity-40"
@@ -98,7 +98,7 @@ export default function Home() {
       {/* LOOKBOOK */}
       <section className="relative h-[60vh] mt-20">
         <Image
-          src="/images/vexor/lookbook.webp"
+          src="/images/vexor/lookbook.png"
           alt="VEXOR lookbook"
           fill
           className="object-cover"
