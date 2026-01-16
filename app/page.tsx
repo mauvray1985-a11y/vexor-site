@@ -70,3 +70,48 @@ export default function Home() {
             <div
               key={p.id}
               className="rounded-2xl border border-white/10 bg-white/5 p-5"
+            >
+              <div className="relative h-56 w-full">
+                <Image
+                  src={p.image}
+                  alt={p.name}
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <h3 className="mt-4 font-semibold">{p.name}</h3>
+              <p className="mt-1 text-sm text-white/70">{p.description}</p>
+              <div className="mt-4 flex items-center justify-between">
+                <span className="font-semibold">{p.price} €</span>
+                <button
+                  onClick={() => addToCart(p.id)}
+                  className="rounded-full bg-[#B87333] px-4 py-2 text-sm font-semibold text-black"
+                >
+                  Ajouter
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* LOOKBOOK */}
+      <section className="relative h-[60vh] mt-20">
+        <Image
+          src="/images/vexor/lookbook.webp"
+          alt="VEXOR lookbook"
+          fill
+          className="object-cover"
+        />
+      </section>
+
+      {/* FOOTER */}
+      <footer className="border-t border-white/10 py-10 text-center text-sm text-white/50">
+        © {new Date().getFullYear()} VEXOR — Engineered for padel
+        <div className="mt-2">
+          Panier : {cart.length} article(s)
+        </div>
+      </footer>
+    </main>
+  );
+}
